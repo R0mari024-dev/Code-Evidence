@@ -201,6 +201,29 @@ layout_mode = 2
 text = "Exit
 (Выйти)"
 
+[node name="Settings" type="CanvasGroup" parent="." unique_id=733838549]
+visible = false
+
+[node name="IRL Settings" type="Label" parent="Settings" unique_id=1394050887]
+offset_left = 291.0
+offset_top = 221.0
+offset_right = 798.0
+offset_bottom = 404.0
+theme_override_font_sizes/font_size = 43
+text = "Settings
+Настройки
+"
+horizontal_alignment = 1
+
+[node name="Button Exit" type="Button" parent="Settings" unique_id=1674980080]
+offset_left = 445.0
+offset_top = 376.0
+offset_right = 645.0
+offset_bottom = 452.0
+theme_override_font_sizes/font_size = 24
+text = "Exit in Menu
+(Выйти в меню)"
+
 [connection signal="pressed" from="Set level/GridContainer/Button level 1" to="." method="_on_button_level_1_pressed"]
 [connection signal="pressed" from="Set level/GridContainer/Button Exit" to="." method="_on_button_exit_pressed"]
 [connection signal="pressed" from="Menu/Button Container/Button1" to="." method="_on_button_1_pressed"]
@@ -210,3 +233,4 @@ text = "Exit
 [connection signal="pressed" from="Menu/Button Container/Button5" to="." method="_on_button_5_pressed"]
 [connection signal="pressed" from="Menu/Button Container/Button6" to="." method="_on_button_6_pressed"]
 [connection signal="pressed" from="Menu/Button Container/Button7" to="." method="_on_button_7_pressed"]
+[connection signal="pressed" from="Settings/Button Exit" to="." method="_on_buttonSettings_exit_pressed"]
